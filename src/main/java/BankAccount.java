@@ -19,20 +19,15 @@ public class BankAccount {
         WORKPLACE
     }
 
-    private int accountNumber;
+    public int accountNumber;
     public BankAccountType accountType;
-    private double accountBalance;
-    private String ownerName;
+    public double accountBalance;
+    public String ownerName;
     public double interestRate;
-    private double interestEarned;
+    public double interestEarned;
 
     public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
+        ownerName = name;
+        accountType = accountCategory;
     }
-
-    /*
-     * Implement getters and setters as appropriate for private variables.
-     */
 }
